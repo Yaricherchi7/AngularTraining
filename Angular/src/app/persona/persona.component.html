@@ -1,0 +1,13 @@
+<div>
+    <h2>Dati di Yari</h2>
+    <p><strong>Nome:</strong> {{ persona.nome }}</p>
+    <p><strong>Cognome:</strong> {{ persona.cognome }}</p>
+    <p><strong>Data di nascita:</strong> {{ persona.dataDiNascita | date }}</p>
+    <p><strong>Ora di nascita:</strong> {{ persona.oraDiNascita }}</p>
+  </div>
+  
+  <div>
+    <button (click)="calcolaEta()">Calcola età</button>
+  </div>
+  
+
