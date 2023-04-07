@@ -1,0 +1,14 @@
+
+
+<div class="card flex flex-column justify-content-center">
+  <form [formGroup]="homeForm" (submit)="onSubmit()" class="forms">
+    <p-calendar formControlName="date"></p-calendar>
+    <label htmlFor="name">Nome</label>
+    <input type="text" pInputText formControlName="name" />
+    <label htmlFor="cognome">Cognome</label>
+    <input type="text" pInputText formControlName="cognome" />
+    <label htmlFor="codFiscale">CodFiscale</label>
+    <input type="text" pInputText formControlName="codFiscale" />
+    <p-button label="Submit" type="submit" [disabled]="!homeForm.valid"> invia</p-button>
+  </form>
+</div>
